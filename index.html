@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <title>Domain Dijual</title>
+    <link rel="icon" href="assets/images/gempita.jpeg" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Domain For Sale Landing Page">
+    <meta name="keywords" content="Domain Landing Page Template, Domain Template, Domain, Domain For Sale">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600%7CMuli" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Resource style -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <a class="logo split-logo hidden-xs" href="#">GMPT</a>
+
+        <!-- Homepage Main Section-->
+      <div class="main split split-2">
+        <section class="split-home">
+          <section class="left-section product-bg wow fadeInDown" data-wow-delay=".6s">
+            <div class="inner text-center">
+              <h1>Selamat ! <br> <span>jualtanah.id</span> <br> Dijual</h1>
+              <p>
+                Domain dengan tingkat SEO yang Baik. Saat ini tersedia untuk anda, <span> jualtanah.id </span> adalah milik pribadi, pastinya anda akan mendapatkan <span>harga yang baik !</span> Tunggu apalagi ? Ambil sekarang juga
+              </p>
+            </div>
+          </section>
+          <section class="right-section wow fadeInDown" data-wow-delay=".8s">
+            <div class="col-md-12">
+              <div class="offer-title text-center">
+                <h1>Tertarik pada domain ini?</h1>
+                <p>
+                  Kamu dapat melakukan kontak secara personal, silahkan isi data pada form ini maka kamu akan langsung diarahkan ke pemilik domain<br class="hidden-xs"> 
+                </p>
+              </div>
+
+<!-- form --> 
+            <form autocomplete="on" id="contact-form">
+             <div class="controls">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form-group">Name *</label>
+                        <input type="text" name="name" id="name" class="form-control"
+                          placeholder="Masukan nama * " value="" required="" data-error="Silahkan masukan nama."/>
+                          <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form-group">Email *</label>
+                        <input type="text" name="email" id="email" class="form-control"
+                          placeholder="Masukan email * " value="" required="" data-error="Silahkan masukan email."/>
+                          <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form-group">Message *</label>
+                        <textarea id="form-message" name="message" id="message" class="form-control" placeholder="Tuliskan pesanmu *" rows="4" required="" data-error="Isikan pesan yang ingin kamu sampaikan"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                  <div class="col-md-12">
+                    <input type="submit" name="submit" class="btn btn-success btn-send" onclick="menujuWhatsapp()" value="Kirim">
+                 </div>
+                </div>
+              </div>      
+            </form>
+          </div>
+         </section>
+       </section>
+      </div><!-- Main-->
+
+
+
+    </div><!-- Wrapper -->
+
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/contact.js"></script>
+    <script type="text/javascript" src="assets/js/validator.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      function menujuWhatsapp() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        var url = "https://wa.me/6287743432225?text="
+              + "name: " + name + "%0a"
+              + "email: " + email + "%0a"
+              + "message: " + message + "%0a"
+
+          window.open(url, '_blank').focus();
+      }
+    </script>
+  </body>
+</html>
